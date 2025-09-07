@@ -43,30 +43,52 @@
   <!-- Forms Section -->
   <section class="form-section">
     <!-- Lost Form -->
-    <div class="form-container" id="lost">
-      <h2>I Lost Something</h2>
-      <form>
-        <input type="text" placeholder="Item Name" required>
-        <input type="text" placeholder="Location Lost" required>
-        <input type="date" placeholder="Date">
-        <textarea placeholder="Description (color, size, details)"></textarea>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+<div class="form-container" id="lost">
+  <h2>I Lost Something</h2>
+  <form>
+    <label for="itemName">Item Name</label>
+    <input type="text" id="itemName" name="itemName" placeholder="Item Name" required>
+    
+    <label for="location">Location Lost</label>
+    <input type="text" id="location" name="location" placeholder="Location Lost" required>
+    
+    <label for="date">Date Lost</label>
+    <input type="date" id="date" name="date">
+    
+    <label for="description">Description</label>
+    <textarea id="description" name="description" placeholder="Color, size, details"></textarea>
+    
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
 
     <!-- Found Form -->
     <div class="form-container" id="found">
-      <h2>I Found Something</h2>
-      <form>
-        <input type="text" placeholder="Item Name" required>
-        <input type="text" placeholder="Location Found" required>
-        <input type="date" placeholder="Date">
-        <textarea placeholder="Description (condition, details)"></textarea>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+  <h2>I Found Something</h2>
+  <form>
+    <label for="foundItemName">Item Name</label>
+    <input type="text" id="foundItemName" name="foundItemName" placeholder="Item Name" required>
+    
+    <label for="foundLocation">Location Found</label>
+    <input type="text" id="foundLocation" name="foundLocation" placeholder="Location Found" required>
+    
+    <label for="foundDate">Date Found</label>
+    <input type="date" id="foundDate" name="foundDate">
+    
+    <label for="foundDescription">Description</label>
+    <textarea id="foundDescription" name="foundDescription" placeholder="Condition, details"></textarea>
+    
+    <label for="foundEmail">Your Email</label>
+    <input type="email" id="foundEmail" name="foundEmail" placeholder="Your Email" required>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
   </section>
 
   <!-- Listings Section -->
@@ -112,7 +134,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 HonestHub | Built with ❤ using HTML & CSS</p>
+    <p>&copy; 2025 HonestHub | Built with ❤ </p>
   </footer>
 
 </body>
